@@ -1,19 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment-3</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assigment-3</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'pet-primary': '#FFDC26',
+          }
+        }
+      }
+    }
+  </script>
+   <style>
+    .adlam-display-regular {
+      font-family: "ADLaM Display", serif;}
+      .sora {
+        font-family: "Sora", serif;}
+  </style>
 </head>
 <body>
-    <header>
+  <nav class="  bg-[#FFF9F4] shadow-md  ">
+    <div class="sora flex items-center justify-between container mx-auto ">
+      <div  class="flex items-center space-x-2">
+        <img src="./c1-assets/logo-header.png" alt="">
+        <h3 class="">Browse<span class="text-yellow-400">4</span>Pets</h3>
+      </div>
+      <div class="hidden md:flex space-x-4 text-black font-light">
+        <a href="" >Find a pet</a>
+        <a href="" >Breeds</a>
+        <a href="" >Contact us</a>
+    </div>
+      
 
-    </header>
-    <main>
+   <div class="hidden md:flex space-x-4 ">
+    <div class="navbar-end ">
+      <button class="btn btn-ghost btn-circle ">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
+      </button>
+      <button class="btn btn-ghost btn-circle">
+        <div class="indicator">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+          </svg>
+          <span class="badge badge-xs badge-primary indicator-item"></span>
+        </div>
+      </button>
+    </div>
+    <button class="border border-pet-primary px-4 py-1 rounded-md hover:bg-gray-100">Login</button>
+    <button class="bg-pet-primary text-black px-4 py-1 rounded-md hover:bg-gray-100">Register</button>
+   </div> 
 
-    </main>
-    <footer>
+    </div>
+    
+  </nav>
+  <header class="pt-2">
+  <div class="container mx-auto bg-[url('/c1-assets/cat-big.png')] w-full h-[750px] bg-cover bg-center">
+        <div class="pt-32" >
+          <h1 class="adlam-display-regular text-6xl mb-2">Pamper Your Pet,<br> Because They Deserve <br>the Bes</h1>
+          <p class="sora text-sm mb-2">Discover a world of treats, toys, and essentials handpicked for <br>your furry friends. Shop now and make tails wag with joy!</p>
+          <button  class="bg-pet-primary text-black px-4 py-1 rounded-md hover:bg-gray-100">Find a pet</button>
+        </div>
         
-    </footer>
+        
+      </div>
+  </header>
+  <main class="container mx-auto">
+    <section class="space-y-4">
+      <h3 class="adlam-display-regular text-4xl mt-32">Browse By Categories</h3>
+      <div class="grid grid-cols-2 lg:grid-cols-6 gap-2 text-center ">
+        <div class=" px-10 py-8  rounded-xl shadow-md bg-pet-primary space-y-2 overflow-hidden">
+          <img  class=" mx-auto rounded-full  bg-white" src="c1-assets/dog-cartoon.png" alt="">
+          <h4 class="adlam-display-regular text-xl">Dog</h4>
+          <p class="sora text-base">3 items</p>
+        </div>
+        <div class="px-10 py-8  rounded-xl shadow-md bg-pet-primary space-y-2 overflow-hidden">
+          <img  class=" mx-auto rounded-full bg-white" src="c1-assets/fish-cartoon.png" alt="">
+          <h4 class="adlam-display-regular text-xl">Fish</h4>
+          <p class="sora text-base">3 items</p>
+        </div>
+        <div class="px-10 py-8 rounded-xl shadow-md bg-pet-primary space-y-2 overflow-hidden">
+          <img  class="mx-auto rounded-full bg-white" src="c1-assets/cat-cartoon.png" alt="">
+          <h4 class="adlam-display-regular text-xl">Cat</h4>
+          <p class="sora text-base">3 items</p>
+        </div>
+        <div class="px-10 py-8 rounded-xl shadow-md bg-pet-primary space-y-2 overflow-hidden">
+          <img  class="mx-auto rounded-full bg-white" src="c1-assets/bird-cartoon.png" alt="">
+          <h4 class="adlam-display-regular text-xl">Birds</h4>
+          <p class="sora text-base">3 items</p>
+        </div>
+        <div class="px-10 py-8 rounded-xl shadow-md bg-pet-primary space-y-2 overflow-hidden">
+          <img  class=" mx-auto rounded-full bg-white" src="c1-assets/mouse-cartoon.png" alt="">
+          <h4 class="adlam-display-regular text-xl">Small pet</h4>
+          <p class="sora text-base">3 items</p>
+        </div>
+        <div class=" px-10 py-8  rounded-xl shadow-md bg-pet-primary space-y-2 overflow-hidden">
+          <img  class="mx-auto rounded-full bg-white" src="c1-assets/rabbit-cartoon.png" alt="">
+          <h4 class="adlam-display-regular text-xl">Rabit</h4>
+          <p class="sora text-base">3 items</p>
+        </div>
+      </div>
+    </section>
+    <section class="container mx-auto bg-[#FFF9F4] space-y-10">
+      <h3 class="adlam-display-regular text-4xl mt-32">Trending Pet Products</h3>
+      <div class="grid grid-cols-1 lg:grid-cols-2">
+        <div>
+          
+        </div>
+        <div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer>
+
+  </footer>
 </body>
 </html>
